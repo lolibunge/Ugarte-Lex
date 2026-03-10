@@ -1,0 +1,305 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_46bnG9": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Vt3Rzt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Servicios",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vt3Rzt"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/bg.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text_A9PppJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rxEapN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nuestros Servicios",
+            "heading_size": "h1"
+          }
+        },
+        "text_QweNPD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Conoce nuestros servicios</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rxEapN",
+        "text_QweNPD"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_i4Gbpj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qx7ty9": {
+          "type": "heading",
+          "settings": {
+            "heading": "FUSIONES & ADQUISICIONES",
+            "heading_size": "h1"
+          }
+        },
+        "text_FV37c3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Asesoramiento legal en fusiones y adquisiciones de empresas locales y extranjeras.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_DkQnia": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Leer más",
+            "button_link": "#",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_qx7ty9",
+        "text_FV37c3",
+        "button_DkQnia"
+      ],
+      "settings": {
+        "custom_class": "",
+        "image": "shopify://shop_images/Rectangle_149-2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "image_with_text_jaRxRp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JjzUHY": {
+          "type": "heading",
+          "settings": {
+            "heading": "AGRONEGOCIOS",
+            "heading_size": "h1"
+          }
+        },
+        "text_YfXdd6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Asesoramiento legal a los principales actores del sector en Argentina.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_UmFY4p": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Leer más",
+            "button_link": "#",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_JjzUHY",
+        "text_YfXdd6",
+        "button_UmFY4p"
+      ],
+      "settings": {
+        "custom_class": "",
+        "image": "shopify://shop_images/Rectangle_149_2e1a48f0-9c8b-4584-a6a9-1634afe6573d.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_TpJfjY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_c4jjgr": {
+          "type": "heading",
+          "settings": {
+            "heading": "SERVICIOS DE REPRESENTACION",
+            "heading_size": "h1"
+          }
+        },
+        "text_wxgKBq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Servicios de representación de empresas extranjeras con presencia en Argentina</p>",
+            "text_style": "body"
+          }
+        },
+        "button_yyJ8JC": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Leer más",
+            "button_link": "#",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_c4jjgr",
+        "text_wxgKBq",
+        "button_yyJ8JC"
+      ],
+      "settings": {
+        "custom_class": "",
+        "image": "shopify://shop_images/Rectangle_149-1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_yMyhMw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GrjthD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Asesoramiento legal estratégico para empresas e inversores que desarrollan negocios en Argentina.",
+            "heading_size": "h1"
+          }
+        },
+        "text_Gq8Xmj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ugarte Lex es un estudio jurídico boutique en Argentina que brinda servicios legales a empresas internacionales, inversores extranjeros y organizaciones multinacionales que desarrollan actividades en el país.</p><p><strong>Áreas de práctica</strong></p><p><strong>Corporate / Derecho Corporativo</strong></p><ul><li>Constitución de sociedades en Argentina</li><li>Estructuración corporativa y gobierno societario</li><li>Redacción y negociación de contratos comerciales</li><li>Reorganizaciones societarias</li><li>Due diligence legal</li><li>Asistencia legal continua a filiales de empresas extranjeras</li></ul><p><strong>Derecho Laboral / Employment</strong></p><ul><li>Contratos de trabajo y políticas laborales</li><li>Estructuración de contratación y personal</li><li>Estrategias de terminación laboral</li><li>Conflictos laborales y litigios</li></ul><p><strong>Inversión Extranjera / Foreign Investment</strong></p><ul><li>Estructuración de inversiones extranjeras en Argentina</li><li>Constitución de filiales y sucursales</li><li>Análisis regulatorio para proyectos de inversión</li><li>Coordinación con estudios jurídicos internacionales</li><li>Joint ventures y adquisiciones</li><li>Asistencia legal para ingreso al mercado argentino</li></ul><p><strong>Energía e Infraestructura / Energy & Infrastructure</strong></p><ul><li>Asesoramiento legal en proyectos energéticos</li><li>Estructuración de inversiones en infraestructura</li><li>Análisis del marco regulatorio energético</li><li>Participación en licitaciones públicas</li><li>Redacción y negociación de contratos de proyecto</li><li>Asistencia legal en inversiones del sector energético</li></ul><p><strong>Servicios de Representación / Representation Services</strong></p><ul><li>Representación legal de empresas extranjeras en Argentina</li><li>Representación ante organismos públicos</li><li>Asistencia en apertura de filiales o sucursales</li><li>Coordinación con estudios jurídicos internacionales</li><li>Apoyo a empresas que evalúan ingresar al mercado argentino</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GrjthD",
+        "text_Gq8Xmj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_pKbT8V": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_iPLfFM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cerrito 1266, Piso 6, <br/>Of. 25, CABA.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_iPLfFM"
+      ],
+      "custom_css": [
+        ".image-with-text--overlap .image-with-text__content {width: 100%; margin: 0rem auto 0;}",
+        "@media screen and (min-width: 990px) {.image-with-text__content {padding: 3rem 7rem 3rem; }}",
+        "@media screen and (min-width: 750px) {.image-with-text--overlap .image-with-text__content {margin-left: -2rem; }}",
+        ".grid--3-col-tablet .grid__item {width: calc(20% - var(--grid-desktop-horizontal-spacing) * 2 / 3);}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "custom_class": "",
+        "image": "shopify://shop_images/foto_GU.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_46bnG9",
+    "rich_text_A9PppJ",
+    "image_with_text_i4Gbpj",
+    "image_with_text_jaRxRp",
+    "image_with_text_TpJfjY",
+    "rich_text_yMyhMw",
+    "image_with_text_pKbT8V"
+  ]
+}

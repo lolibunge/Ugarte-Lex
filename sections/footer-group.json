@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our Newsletter",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_3JjjGt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ugartelex_c97e31a7-ae29-454f-8326-64bb2e3cc335.png",
+            "image_width": 330,
+            "alignment": "",
+            "text": "<p>Abogado de la Facultad de Derecho de la Universidad de Buenos Aires con veinte años de experiencia.</p><p><a href=\"mailto:gonzalo@ugartelex.com\" target=\"_blank\" title=\"mailto:gonzalo@ugartelex.com\">gonzalo@ugartelex.com</a></p>"
+          }
+        },
+        "link_list_yhQz6q": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Nuestros Servicios",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "image_3JjjGt",
+        "link_list_yhQz6q"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 100,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "newsletter",
+    "footer"
+  ]
+}
