@@ -312,32 +312,6 @@
         "padding_top": 56,
         "padding_bottom": 56
       }
-    },
-    "contact_card_6aQBnn": {
-      "type": "contact-card",
-      "blocks": {
-        "image_tKNBmC": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/foto_GU.jpg",
-            "alt": ""
-          }
-        },
-        "heading_m3UJ9D": {
-          "type": "heading",
-          "settings": {
-            "title": "Cerrito 1266, Piso 6, Of. 25, CABA."
-          }
-        }
-      },
-      "block_order": [
-        "image_tKNBmC",
-        "heading_m3UJ9D"
-      ],
-      "name": "Contact card",
-      "settings": {
-        "aria_label": "Contact card"
-      }
     }
   },
   "order": [
@@ -347,7 +321,6 @@
     "rich_text_wwTQry",
     "multicolumn_UeE7Kw",
     "image_with_text_RebKFa",
-    "multicolumn_4LHEJh",
-    "contact_card_6aQBnn"
+    "multicolumn_4LHEJh"
   ]
 }

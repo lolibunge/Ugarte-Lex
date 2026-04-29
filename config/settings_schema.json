@@ -1311,6 +1311,18 @@
       },
       {
         "type": "text",
+        "id": "social_google_maps_link",
+        "label": "t:settings_schema.social-media.settings.social_google_maps_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_google_maps_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_linkedin_link",
+        "label": "t:settings_schema.social-media.settings.social_linkedin_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_linkedin_link.info"
+      },
+      {
+        "type": "text",
         "id": "social_facebook_link",
         "label": "t:settings_schema.social-media.settings.social_facebook_link.label",
         "placeholder": "t:settings_schema.social-media.settings.social_facebook_link.info"

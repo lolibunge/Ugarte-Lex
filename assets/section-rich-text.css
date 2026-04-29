@@ -84,3 +84,9 @@
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
+
+@media screen and (min-width:768px) {
+  .rich-text__text h2 {
+    font-size: calc(var(--font-heading-scale) * 4rem);
+  }
+}

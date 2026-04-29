@@ -55,77 +55,11 @@
         "padding_bottom": 68,
         "contact": "¿Necesitas ayuda?"
       }
-    },
-    "multicolumn_VzUf3J": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_xQntia": {
-          "type": "column",
-          "settings": {
-            "title": "85+",
-            "text": "<p>Clientes Satisfechos</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_D9UCxQ": {
-          "type": "column",
-          "settings": {
-            "title": "50+",
-            "text": "<p>Premios ganados</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_6LhEa7": {
-          "type": "column",
-          "settings": {
-            "title": "125+",
-            "text": "<p>Proyectos completos</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_VaXfKz": {
-          "type": "column",
-          "settings": {
-            "title": "6824+",
-            "text": "<p>Horas Trabajadas</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_xQntia",
-        "column_D9UCxQ",
-        "column_6LhEa7",
-        "column_VaXfKz"
-      ],
-      "disabled": true,
-      "settings": {
-        "custom_class": "white_box",
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-4",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 56,
-        "padding_bottom": 56
-      }
     }
   },
   "order": [
     "main",
     "image_banner_8U7JDA",
-    "form",
-    "multicolumn_VzUf3J"
+    "form"
   ]
 }

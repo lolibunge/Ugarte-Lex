@@ -10,6 +10,27 @@
 {% endcomment %}
 
 <ul class="list-unstyled list-social{% if class %} {{ class}}{% endif %}" role="list">
+  {%- if settings.social_google_maps_link != blank -%}
+  <li class="list-social__item">
+    <a href="{{ settings.social_google_maps_link }}" class="link list-social__link" target="blank">
+      <span class="svg-wrapper">
+        <!-- Google Maps SVG -->
+        {{- 'icon-google-maps.svg' | inline_asset_content -}}
+      </span>
+      <span class="visually-hidden">Google Maps</span>
+    </a>
+  </li>
+{%- endif -%}
+  {%- if settings.social_linkedin_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_linkedin_link }}" class="link list-social__link" target="blank">
+        <span class="svg-wrapper">
+          {{- 'icon-linkedin.svg' | inline_asset_content -}}
+        </span>
+        <span class="visually-hidden">LinkedIn</span>
+      </a>
+    </li>
+  {%- endif -%}
   {%- if settings.social_facebook_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_facebook_link }}" class="link list-social__link">

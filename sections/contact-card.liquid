@@ -5,85 +5,145 @@
 
 {%- liquid
   assign image_block = nil
+  assign has_image = false
 
   for block in section.blocks
     if block.type == 'image'
       assign image_block = block
+      if block.settings.image != blank
+        assign has_image = true
+      endif
       break
     endif
   endfor
 -%}
 
-<section class="contact-card" aria-label="{{ section.settings.aria_label | escape }}">
+<section
+  class="
+    contact-card
+    contact-card--{% if has_image %}has-image{% else %}no-image{% endif %}
+    contact-card--image-{{ section.settings.image_overlay_alignment }}
+    contact-card--content-position-{{ section.settings.content_position }}
+    contact-card--title-align-{{ section.settings.title_alignment }}
+    contact-card--text-align-{{ section.settings.text_alignment }}
+    contact-card--button-align-{{ section.settings.button_alignment }}
+  "
+  aria-label="{{ section.settings.aria_label | escape }}"
+  style="
+    --contact-card-background-color: {{ section.settings.background_color }};
+    --contact-card-content-background-color: {{ section.settings.content_background_color }};
+  "
+>
   <div class="contact-card__inner">
-    <div class="contact-card__media" {% if image_block == nil %}hidden{% endif %}>
-      {%- if image_block != nil -%}
-        {%- liquid
-          assign img = image_block.settings.image
-          assign alt = image_block.settings.alt | default: img.alt
-        -%}
+    <div class="contact-card__visual" {% unless has_image %}hidden{% endunless %}>
+      <div class="contact-card__media">
+        {%- if has_image -%}
+          {%- liquid
+            assign img = image_block.settings.image
+            assign alt = image_block.settings.alt | default: img.alt
+          -%}
 
-        {%- if img != blank -%}
-          {{
-            img
-            | image_url: width: 1200
-            | image_tag:
-              loading: 'lazy',
-              widths: '320, 480, 640, 800, 1000, 1200',
-              sizes: '(min-width: 990px) 360px, 100vw',
-              alt: alt
-          }}
+          {%- if img != blank -%}
+            {{
+              img
+              | image_url: width: 1200
+              | image_tag:
+                loading: 'lazy',
+                widths: '320, 480, 640, 800, 1000, 1200',
+                sizes: '(min-width: 990px) 360px, 100vw',
+                alt: alt
+            }}
+          {%- endif -%}
         {%- endif -%}
-      {%- endif -%}
+      </div>
     </div>
 
     <div class="contact-card__content">
-      {%- for block in section.blocks -%}
-        {%- if block.type != 'image' -%}
-          {%- case block.type -%}
-            {%- when 'heading' -%}
-              {%- if block.settings.title != blank -%}
-                <h2 class="contact-card__title" {{ block.shopify_attributes }}>
-                  {{ block.settings.title }}
-                </h2>
-              {%- endif -%}
+      <div class="contact-card__inner-content">
+        {%- for block in section.blocks -%}
+          {%- if block.type != 'image' -%}
+            {%- case block.type -%}
+              {%- when 'heading' -%}
+                {%- if block.settings.title != blank -%}
+                  <h2 class="contact-card__title" {{ block.shopify_attributes }}>
+                    {{ block.settings.title }}
+                  </h2>
+                {%- endif -%}
 
-            {%- when 'text' -%}
-              {%- if block.settings.text != blank -%}
-                <div class="contact-card__text rte" {{ block.shopify_attributes }}>
-                  {{ block.settings.text }}
-                </div>
-              {%- endif -%}
+              {%- when 'text' -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="contact-card__text rte" {{ block.shopify_attributes }}>
+                    {{ block.settings.text }}
+                  </div>
+                {%- endif -%}
 
-            {%- when 'button' -%}
-              {%- if block.settings.label != blank and block.settings.link != blank -%}
-                <div class="contact-card__actions" {{ block.shopify_attributes }}>
-                  <a
-                    class="{{ block.settings.button_class }}"
-                    href="{{ block.settings.link }}"
-                    {% if block.settings.open_new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}
-                  >
-                    {{ block.settings.label }}
-                  </a>
-                </div>
-              {%- endif -%}
-          {%- endcase -%}
-        {%- endif -%}
-      {%- endfor -%}
+              {%- when 'button' -%}
+                {%- if block.settings.label != blank and block.settings.link != blank -%}
+                  <div class="contact-card__actions" {{ block.shopify_attributes }}>
+                    <a
+                      class="{{ block.settings.button_class }}"
+                      href="{{ block.settings.link }}"
+                      {% if block.settings.open_new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}
+                    >
+                      {{ block.settings.label }}
+                    </a>
+                  </div>
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </section>
 
 <style>
-  .contact-card__inner {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+  .contact-card {
+    --contact-card-image-size: min(220px, 16vw);
+    --contact-card-image-offset: clamp(20px, 3vw, 44px);
+    --contact-card-content-gap: clamp(20px, 3vw, 48px);
+    background-color: var(--contact-card-background-color);
+    padding: clamp(16px, 3vw, 40px);
   }
 
-  .contact-card__media {
-    flex: 0 0 220px;
-    max-width: 220px;
+  .contact-card__inner {
+    position: relative;
+    width: 100%;
+  }
+
+  .contact-card--content-position-left .contact-card__inner {
+    margin-inline: 0 auto;
+  }
+
+  .contact-card--content-position-center .contact-card__inner {
+    margin-inline: auto;
+  }
+
+  .contact-card--content-position-right .contact-card__inner {
+    margin-inline: auto 0;
+  }
+
+  .contact-card__content {
+    width: 100%;
+    min-height: clamp(120px, 12vw, 140px);
+    padding: clamp(20px, 3vw, 36px);
+    background-color: var(--contact-card-content-background-color);
+    display: grid;
+    align-content: center;
+    row-gap: 12px;
+  }
+
+  .contact-card__visual {
+    position: absolute;
+    top: 50%;
+    width: var(--contact-card-image-size);
+    max-width: 320px;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .contact-card--image-left .contact-card__visual {
+    left: var(--contact-card-image-offset);
   }
 
   .contact-card__media img {
@@ -92,21 +152,132 @@
     height: auto;
   }
 
-  .contact-card__content {
-    flex: 1 1 auto;
-    min-width: 0;
+  .contact-card--image-right .contact-card__visual {
+    right: var(--contact-card-image-offset);
+    left: auto;
+  }
+
+  .contact-card__inner-content {
+    margin-inline: 0;
+  }
+
+  .contact-card--title-align-left .contact-card__title {
+    text-align: left;
+  }
+
+  .contact-card--title-align-center .contact-card__title {
     text-align: center;
   }
 
-  @media (max-width: 749px) {
-    .contact-card__inner {
-      flex-direction: column;
+  .contact-card--title-align-right .contact-card__title {
+    text-align: right;
+  }
+
+  .contact-card--text-align-left .contact-card__text {
+    text-align: left;
+  }
+
+  .contact-card--text-align-center .contact-card__text {
+    text-align: center;
+  }
+
+  .contact-card--text-align-right .contact-card__text {
+    text-align: right;
+  }
+
+  .contact-card__actions {
+    display: flex;
+  }
+
+  .contact-card--button-align-left .contact-card__actions {
+    justify-content: flex-start;
+  }
+
+  .contact-card--button-align-center .contact-card__actions {
+    justify-content: center;
+  }
+
+  .contact-card--button-align-right .contact-card__actions {
+    justify-content: flex-end;
+  }
+  
+
+  @media screen and (min-width: 768px) {
+    .contact-card--has-image.contact-card--image-left .contact-card__inner-content {
+      margin-inline-start: calc(
+        var(--contact-card-image-size) + var(--contact-card-image-offset) + var(--contact-card-content-gap)
+      );
+    }
+
+    .contact-card--has-image.contact-card--image-right .contact-card__inner-content {
+      margin-inline-end: calc(
+        var(--contact-card-image-size) + var(--contact-card-image-offset) + var(--contact-card-content-gap)
+      );
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact-card {
+      --contact-card-image-size: 100%;
+      --contact-card-image-offset: 0px;
+      padding: 16px;
+    }
+
+    .contact-card--has-image .contact-card__inner {
+      display: grid;
+      grid-template-columns: 240px 1fr;
       align-items: stretch;
+      min-height: clamp(220px, 36vw, 360px);
+    }
+
+    .contact-card__visual {
+      position: static;
+      top: auto;
+      left: auto;
+      right: auto;
+      width: 100%;
+      max-width: 240px;
+      height: 100%;
+      transform: none;
     }
 
     .contact-card__media {
-      max-width: 100%;
-      flex-basis: auto;
+      height: 100%;
+    }
+
+    .contact-card--image-right .contact-card__visual {
+      grid-column: 2;
+    }
+
+    .contact-card--image-right .contact-card__content {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .contact-card__content {
+      min-height: 100%;
+      padding: clamp(16px, 2.5vw, 24px);
+    }
+
+    .contact-card__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .contact-card__inner-content {
+      margin-inline: 0;
+    }
+  }
+
+   @media screen and (max-width: 500px) {
+    .contact-card--has-image .contact-card__inner {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+   @media screen and (max-width: 425px) {
+    .contact-card__visual {
+      max-width: none;
     }
   }
 </style>
@@ -121,6 +292,72 @@
       "id": "aria_label",
       "label": "Accessibility label",
       "default": "Contact card"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "content_background_color",
+      "label": "Info container background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "image_overlay_alignment",
+      "label": "Image overlay alignment",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Content position",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "title_alignment",
+      "label": "Title alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_alignment",
+      "label": "Button alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
     }
   ],
   "blocks": [
