@@ -31,9 +31,9 @@ body .header__search {
 
 /**************************************************************HOME*************************************************************************************/
 .banner__heading.inline-richtext.h0 {
-  font-family: Cormorant;
+  font-family: Inter;
   font-size: 104px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 120px;
   text-align: center;
   text-underline-position: from-font;
