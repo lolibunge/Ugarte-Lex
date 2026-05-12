@@ -26,18 +26,10 @@
             "heading": "Nuestros Servicios",
             "heading_size": "h1"
           }
-        },
-        "text_HxABqX": {
-          "type": "text",
-          "settings": {
-            "text": "Conoce nuestros servicios",
-            "text_style": "body"
-          }
         }
       },
       "block_order": [
-        "heading_Vt3Rzt",
-        "text_HxABqX"
+        "heading_Vt3Rzt"
       ],
       "settings": {
         "image": "shopify://shop_images/bg.jpg",
@@ -128,9 +120,9 @@
         "collapsible_row_Ac3iQt": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "SERVICIOS DE REPRESENTACIÓN",
+            "heading": "LABORAL",
             "icon": "none",
-            "row_content": "<ul><li>Representación legal de empresas extranjeras en Argentina</li><li>Representación ante organismos públicos</li><li>Asistencia en apertura de filiales o sucursales</li><li>Coordinación con estudios jurídicos internacionales</li><li>Apoyo a empresas que evalúan ingresar al mercado argentino</li></ul>",
+            "row_content": "<ul><li>Asistencia permanente en materia laboral</li><li>Traslado o cierre de establecimientos.</li><li>Desvinculaciones de funcionarios jerárquicos y participación en auditorias de empresa en los casos de fraude empresario</li><li>Asuntos laborales contenciosos y solución de controversias</li></ul>",
             "page": ""
           }
         }
@@ -146,7 +138,7 @@
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
-        "heading": "ÁREAS DE PRÁCTICAS",
+        "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",

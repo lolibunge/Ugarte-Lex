@@ -19,8 +19,8 @@
             "heading": "Su éxito nuestro objetivo",
             "heading_size": "h0",
             "subheading": "",
-            "button_label": "Empezar",
-            "link": "#",
+            "button_label": "",
+            "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -125,17 +125,10 @@
             "heading": "Nuestros Servicios",
             "heading_size": "h1"
           }
-        },
-        "text_rNGtN9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Conoce nuestros servicios</p>"
-          }
         }
       },
       "block_order": [
-        "heading_nCeEU3",
-        "text_rNGtN9"
+        "heading_nCeEU3"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -158,15 +151,6 @@
             "link": "shopify://pages/servicios"
           }
         },
-        "column_kt6kDM": {
-          "type": "column",
-          "settings": {
-            "title": "Agronegocios",
-            "text": "<p>Asesoramiento legal a los principales actores del sector en Argentina.</p>",
-            "link_label": "Leer más",
-            "link": "shopify://pages/servicios"
-          }
-        },
         "column_PNCzpR": {
           "type": "column",
           "settings": {
@@ -175,12 +159,21 @@
             "link_label": "Leer más",
             "link": "shopify://pages/servicios"
           }
+        },
+        "column_kt6kDM": {
+          "type": "column",
+          "settings": {
+            "title": "Derecho Corporativo",
+            "text": "<p>Constitución de sociedades en Argentina. </p>",
+            "link_label": "Leer más",
+            "link": "shopify://pages/servicios"
+          }
         }
       },
       "block_order": [
         "column_FBhm8Q",
-        "column_kt6kDM",
-        "column_PNCzpR"
+        "column_PNCzpR",
+        "column_kt6kDM"
       ],
       "settings": {
         "custom_class": "red_text",
@@ -197,54 +190,6 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_RebKFa": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_Yr9rBq": {
-          "type": "heading",
-          "settings": {
-            "heading": "Gonzalo Ugarte",
-            "heading_size": "h1"
-          }
-        },
-        "text_7K47GH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Abogado (Facultad de Derecho de la Universidad de Buenos Aires 2005). Ha concentrado su práctica en el área de derecho corporativo, asesorando a compañías locales e internacionales en fusiones y adquisiciones, cuestiones societarias y en estructuración de inversiones tanto en Argentina como en el exterior.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_exRpUH": {
-          "type": "button",
-          "settings": {
-            "button_label": "Contáctanos",
-            "button_link": "shopify://pages/contact",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Yr9rBq",
-        "text_7K47GH",
-        "button_exRpUH"
-      ],
-      "settings": {
-        "custom_class": "bio_index",
-        "image": "shopify://shop_images/Rectangle_149-2.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -320,7 +265,6 @@
     "image_with_text_bDckmq",
     "rich_text_wwTQry",
     "multicolumn_UeE7Kw",
-    "image_with_text_RebKFa",
     "multicolumn_4LHEJh"
   ]
 }
