@@ -58,6 +58,7 @@
       "block_order": [
         "text_jbyL9R"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -131,12 +132,46 @@
         "padding_top": 56,
         "padding_bottom": 56
       }
+    },
+    "contact_card_fD9LAM": {
+      "type": "contact-card",
+      "blocks": {
+        "image_WPVt3m": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/foto_GU.jpg",
+            "alt": ""
+          }
+        },
+        "text_GJcfdx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ugarte Abogados es un estudio jurídico boutique en Argentina que brinda servicios legales a empresas internacionales, inversores extranjeros y organizaciones multinacionales que desarrollan actividades en el país. Nos especializamos en fusiones y adquisiciones, derecho corporativo y estructuración de inversiones, ofreciendo asesoramiento estratégico y personalizado a clientes locales y del exterior.</p><p>Gonzalo Ugarte. Abogado (Facultad de Derecho de la Universidad de Buenos Aires 2005). Ha concentrado su práctica en el área de derecho corporativo, asesorando a compañías locales e internacionales en fusiones y adquisiciones, cuestiones societarias y en estructuración de inversiones tanto en Argentina como en el exterior.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_WPVt3m",
+        "text_GJcfdx"
+      ],
+      "name": "Contact card",
+      "settings": {
+        "aria_label": "Contact card",
+        "background_color": "#ffffff",
+        "content_background_color": "rgba(0,0,0,0)",
+        "image_overlay_alignment": "left",
+        "content_position": "center",
+        "title_alignment": "center",
+        "text_alignment": "left",
+        "button_alignment": "center"
+      }
     }
   },
   "order": [
     "main",
     "image_banner_jqQpBV",
     "rich_text_aCWEwc",
-    "multicolumn_9Ny6z7"
+    "multicolumn_9Ny6z7",
+    "contact_card_fD9LAM"
   ]
 }

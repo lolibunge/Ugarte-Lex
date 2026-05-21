@@ -30,10 +30,16 @@ body .header__search {
 }
 
 /**************************************************************HOME*************************************************************************************/
+.rich-text__heading,
+.banner__heading,
+.image-with-text__heading,
+.footer-block__heading {
+  font-family: Inter;
+}
 .banner__heading.inline-richtext.h0 {
-  font-family: Cormorant;
+  font-family: Inter;
   font-size: 104px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 120px;
   text-align: center;
   text-underline-position: from-font;
@@ -52,11 +58,10 @@ body .slideshow__text.banner__box {
   padding-right: 0;
 }
 .multicolumn-card__info h3 {
-  font-family: Cormorant;
+  font-family: Inter;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 56px;
-  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
@@ -185,8 +190,14 @@ body .footer__content-bottom-wrapper--center {
   justify-content: center;
   gap: 7%;
   align-items: center;
+  padding: 40px 0;
 }
-.contact_right {
+.contact_container .contact .title,
+.contact_container .contact_right h4 {
+  font-family: Inter;
+}
+
+.contact_right .black-box {
   background: #333;
   display: flex;
   flex-direction: column;

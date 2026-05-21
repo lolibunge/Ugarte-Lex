@@ -37,3 +37,13 @@
     grid-column-gap: 2rem;
   }
 }
+
+
+.contact-map {
+  margin-top: 40px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  border-radius: 8px;
+}

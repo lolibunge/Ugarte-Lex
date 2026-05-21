@@ -61,7 +61,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Nuestros Servicios",
-            "menu": "footer"
+            "menu": "menu-footer-2"
           }
         }
       },
@@ -74,7 +74,7 @@
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,
-        "show_social": false,
+        "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
